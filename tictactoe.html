@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+</head>
+<style>
+    body {
+        background: linear-gradient(rgb(49, 47, 47), rgb(70, 66, 66));
+        color: rgb(212, 203, 203);
+        height: 60rem;
+        font-family: 'Vujahday Script', cursive;
+    }
+
+    .head {
+        font-family: 'The Nautigal', cursive;
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 4px 4px 8px lightslategray;
+    }
+
+    .container {
+        background: linear-gradient(rgb(206, 187, 187), rgb(70, 66, 66));
+        display: flex;
+        justify-content: center;
+        margin: 4rem;
+        height: 70%;
+        position: relative;
+    }
+
+    .board {
+        width: 50%;
+        margin: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .r {
+        display: flex;
+        width: 99%;
+        height: 32%;
+        justify-content: center;
+        /* border: 2px solid rgb(0, 255, 85); */
+    }
+
+    .box {
+        display: flex;
+        width: 27%;
+        height: 100%;
+        font-size: 8rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .p1,
+    .p2 {
+        margin: 2rem;
+        width: 35%;
+        height: 85%;
+        text-align: center;
+        background: linear-gradient(rgb(39, 35, 35), rgb(70, 66, 66));
+        font-size: 1em;
+        color: black;
+    }
+
+    .p1 {
+        text-shadow: 2px 2px 5px blueviolet;
+    }
+
+    .p2 {
+        text-shadow: 2px 2px 5px rgb(48, 148, 179);
+    }
+
+    #img1,
+    #img2 {
+        margin: 3rem;
+        border-radius: 170rem;
+    }
+
+    .box-1,
+    .box-2,
+    .box-4,
+    .box-5,
+    .box-7,
+    .box-8 {
+        background: linear-gradient(rgb(39, 35, 35), rgb(70, 66, 66));
+        border-right: 5px solid rgb(95, 91, 91);
+    }
+
+    .box-3,
+    .box-6,
+    .box-9 {
+        background: linear-gradient(rgb(39, 35, 35), rgb(70, 66, 66));
+        /* background: linear-gradient(rgb(10, 2, 27),rgb(5, 50, 92)); */
+    }
+
+    .box:hover {
+        cursor: pointer;
+    }
+
+    #msg {
+        background-color: rgb(63, 102, 90);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -40rem;
+        padding: 6rem 6rem;
+        width: 70%;
+        height: 10%;
+        margin-left: 13rem;
+        font-size: 6rem;
+        color: black;
+        text-shadow:3px 3px 7px blanchedalmond;
+        visibility: hidden;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="head">
+            <h1>Tic Tac Toe</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="p1">
+            <img id="img1"
+                src="https://image.shutterstock.com/image-vector/modern-professional-ninja-mascot-logo-600w-1729854862.jpg"
+                alt="Player-1" width="70%" height="58%">
+            <h1>Player 1</h1>
+        </div>
+        <div class="board">
+            <div class="r">
+                <div class="box-1 box" onclick="tac(1)" id="b1"></div>
+                <div class="box-2 box" onclick="tac(2)" id="b2"></div>
+                <div class="box-3 box" onclick="tac(3)" id="b3"></div>
+            </div>
+            <div class="r">
+                <div class="box-4 box" onclick="tac(4)" id="b4"></div>
+                <div class="box-5 box" onclick="tac(5)" id="b5"></div>
+                <div class="box-6 box" onclick="tac(6)" id="b6"></div>
+            </div>
+            <div class="r">
+                <div class="box-7 box" onclick="tac(7)" id="b7"></div>
+                <div class="box-8 box" onclick="tac(8)" id="b8"></div>
+                <div class="box-9 box" onclick="tac(9)" id="b9"></div>
+            </div>
+        </div>
+        <div class="p2">
+            <img id="img2"
+                src="https://image.shutterstock.com/image-vector/ninja-assassin-mascot-sport-esport-600w-1533399641.jpg"
+                alt="Player-2" height="58%" width="70%">
+            <h1>Player 2</h1>
+        </div>
+    </div>
+    <div id="msg" onclick="document.location.reload(true)">
+        
+    </div>
+    <script src="tictactoe.js"></script>
+</body>
+
+</html>
