@@ -11,13 +11,12 @@
     body {
         background: linear-gradient(rgb(49, 47, 47), rgb(70, 66, 66));
         color: rgb(212, 203, 203);
-        height: 60rem;
         font-family: 'Vujahday Script', cursive;
     }
 
     .head {
         font-family: 'The Nautigal', cursive;
-        font-size: 3rem;
+        font-size: 37px;
         text-align: center;
         text-shadow: 4px 4px 8px lightslategray;
     }
@@ -26,14 +25,15 @@
         background: linear-gradient(rgb(206, 187, 187), rgb(70, 66, 66));
         display: flex;
         justify-content: center;
-        margin: 4rem;
-        height: 70%;
+        margin: 3rem;
+        height: 45%;
         position: relative;
     }
 
     .board {
-        width: 50%;
-        margin: 5rem;
+        width: 60%;
+        height: 350px;
+        margin: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -51,15 +51,15 @@
         display: flex;
         width: 27%;
         height: 100%;
-        font-size: 8rem;
+        font-size: 4rem;
         justify-content: center;
         text-align: center;
     }
 
     .p1,
     .p2 {
-        margin: 2rem;
-        width: 35%;
+        margin: 3rem;
+        width: 39%;
         height: 85%;
         text-align: center;
         background: linear-gradient(rgb(39, 35, 35), rgb(70, 66, 66));
@@ -77,8 +77,8 @@
 
     #img1,
     #img2 {
-        margin: 3rem;
-        border-radius: 170rem;
+        margin: 2rem;
+        border-radius: 50%;
     }
 
     .box-1,
@@ -110,10 +110,10 @@
         position: relative;
         top: -40rem;
         padding: 6rem 6rem;
-        width: 70%;
-        height: 10%;
-        margin-left: 13rem;
-        font-size: 6rem;
+        width: 50%;
+        height: 15px;
+        margin-left: 15rem;
+        font-size: 3rem;
         color: black;
         text-shadow:3px 3px 7px blanchedalmond;
         visibility: hidden;
@@ -126,7 +126,7 @@
             <h1>Tic Tac Toe</h1>
         </div>
     </header>
-    <div class="container">
+    <div class="container" >
         <div class="p1">
             <img id="img1"
                 src="https://image.shutterstock.com/image-vector/modern-professional-ninja-mascot-logo-600w-1729854862.jpg"
@@ -157,9 +157,7 @@
             <h1>Player 2</h1>
         </div>
     </div>
-    <div id="msg" onclick="document.location.reload(true)">
-        
-    </div>
+    <div id="msg" onclick="document.location.reload(true)"> </div>
     <script src="tictactoe.js"></script>
 </body>
 
